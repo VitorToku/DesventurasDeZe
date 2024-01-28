@@ -1,3 +1,3 @@
 # DesventurasDeZe
 
-Um ida na vida do zé
+Um dia na vida do zé

@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj4s10bhtnj6m"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_amcjm"]
+[ext_resource type="Script" path="res://scripts/onibus.cs" id="2_23xna"]
+
+[node name="Cena0" instance=ExtResource("1_amcjm")]
+script = ExtResource("2_23xna")
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+offset_bottom = 53.0
+bbcode_enabled = true
+text = "[center]Depois de finalmente entrar no ônibus, enxarcado de água Zé avista um único lugar vazio no ônibus. Ele já está molhado e fedido e descansar seria muito bom, mas é um assento preferencial"
+
+[node name="Button2" type="Button" parent="ColorRect" index="1"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 66.0
+offset_right = 493.0
+offset_bottom = 120.0
+text = "Sentar"
+
+[node name="Button3" type="Button" parent="ColorRect" index="2"]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 66.0
+offset_right = 935.0
+offset_bottom = 120.0
+text = "Ficar espremido entre os pobre mortais de pé."
+
+[connection signal="pressed" from="ColorRect/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="ColorRect/Button3" to="." method="_on_button_3_pressed"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://da568tbltbd3a"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_5gsg6"]
+[ext_resource type="Script" path="res://scripts/semguardachuva.cs" id="2_dfvcn"]
+[ext_resource type="Texture2D" uid="uid://c45n7im74qqc8" path="res://img/ensolarado-chuvosoEdit.png" id="3_u0pxl"]
+[ext_resource type="Texture2D" uid="uid://ccjqdi02q5sa0" path="res://img/enxarcado.png" id="4_ojcg4"]
+
+[node name="Cena0" instance=ExtResource("1_5gsg6")]
+script = ExtResource("2_dfvcn")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("3_u0pxl")
+
+[node name="Enxarcado" type="Sprite2D" parent="." index="2"]
+position = Vector2(894, 490)
+scale = Vector2(0.335, 0.335)
+texture = ExtResource("4_ojcg4")
+
+[node name="ColorRect" parent="." index="3"]
+offset_left = -4.0
+offset_top = 462.0
+offset_right = 1147.0
+offset_bottom = 659.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center]A maior tempestade dos últimos 50 anos começou a cair depois de 5 minutos que ele saiu de casa sem o guarda-chuva."

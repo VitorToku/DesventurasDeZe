@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bani5gho8lvo"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_yselg"]
+[ext_resource type="Script" path="res://scripts/naosentou.cs" id="2_aa812"]
+
+[node name="Cena0" instance=ExtResource("1_yselg")]
+script = ExtResource("2_aa812")
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center] Ao descer no ponto mais perto de seu trabalho, Zé percebe que ninguém se sentou no assento durante a viagem inteira..."

@@ -1,14 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://djyhipmlc03dl"]
+[gd_scene load_steps=5 format=3 uid="uid://djyhipmlc03dl"]
 
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_f2akh"]
+[ext_resource type="Script" path="res://scripts/saindo_de_casa.cs" id="2_ghhj6"]
 [ext_resource type="Texture2D" uid="uid://7guul3u62b5g" path="res://img/saindo-de-casaedit.jpg" id="2_ilde2"]
+[ext_resource type="Texture2D" uid="uid://cux2incw04yul" path="res://img/decostas.png" id="4_817ro"]
 
 [node name="Cena0" instance=ExtResource("1_f2akh")]
+script = ExtResource("2_ghhj6")
 
 [node name="Sprite2D" parent="." index="1"]
 texture = ExtResource("2_ilde2")
 
-[node name="ColorRect" parent="." index="2"]
+[node name="Decostas" type="Sprite2D" parent="." index="2"]
+position = Vector2(645, 320)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("4_817ro")
+
+[node name="ColorRect" parent="." index="3"]
 offset_left = 1.0
 offset_top = 452.0
 offset_bottom = 649.0
@@ -36,3 +44,6 @@ offset_right = 935.0
 offset_bottom = 120.0
 text = "\"Isso só vai me atrapalhar hoje\"
 (Não levar guarda chuva)"
+
+[connection signal="pressed" from="ColorRect/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="ColorRect/Button3" to="." method="_on_button_3_pressed"]

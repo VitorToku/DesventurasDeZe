@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://6774mkpnc3cw"]
+[gd_scene load_steps=3 format=3 uid="uid://6774mkpnc3cw"]
 
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_tf0ej"]
+[ext_resource type="Script" path="res://scripts/levou_guarda_chuva.cs" id="2_r858c"]
 
 [node name="Cena0" instance=ExtResource("1_tf0ej")]
+script = ExtResource("2_r858c")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(601, 392)
 
 [node name="ColorRect" parent="." index="2"]
 offset_left = 1.0
@@ -12,6 +17,7 @@ offset_bottom = 649.0
 [node name="RichTextLabel" parent="ColorRect" index="0"]
 offset_left = 72.0
 offset_right = 1077.0
-offset_bottom = 55.0
+offset_bottom = 112.0
 bbcode_enabled = true
-text = "[center]No caminho até o ponto de ônibus, uma chuva muito forte começa a cair, Zé se sente aliviado por ter escolhido trazer o guarda-chuva. "
+text = "[center]No caminho até o ponto de ônibus, uma chuva muito forte começa a cair, Zé se sente aliviado por ter escolhido trazer o guarda-chuva. 
+Decidiu acelerar o passo para chegar até o ponto de ônibus mais rápido, quando menos espera... Um ônibus passa bem em cima de uma poça d’agua enorme."

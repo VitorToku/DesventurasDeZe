@@ -1,10 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://d05e8afrn4kta"]
+[gd_scene load_steps=4 format=3 uid="uid://d05e8afrn4kta"]
 
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_70xlt"]
 [ext_resource type="Script" path="res://scripts/prólogo.cs" id="2_6qygv"]
+[ext_resource type="Texture2D" uid="uid://bryk47bs8q8qa" path="res://img/zeruela.png" id="3_tcbt8"]
 
 [node name="Cena0" instance=ExtResource("1_70xlt")]
 script = ExtResource("2_6qygv")
+
+[node name="Fundo" parent="." index="0"]
+color = Color(0.952941, 0.8, 0.894118, 1)
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(575.5, 321.51)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("3_tcbt8")
 
 [node name="ColorRect" parent="." index="2"]
 offset_left = 1.0

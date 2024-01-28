@@ -12,7 +12,7 @@ public partial class levou_guarda_chuva : ColorRect
 	public override void _Process(double delta)
 	{	
 		if(Input.IsActionJustPressed("ui_accept")){
-			GetTree().ChangeSceneToFile("res://cenas/onibus.tscn");			
+			GetTree().ChangeSceneToFile("res://cenas/levouguardachuva2.tscn");			
 		}
 
 			

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3fnenwe7jgkk"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_b34s8"]
+[ext_resource type="Script" path="res://scripts/levouguardachuva3.cs" id="2_6qr2k"]
+[ext_resource type="Texture2D" uid="uid://bnp3akvm6dou2" path="res://img/onibusfdp.png" id="2_x4xrb"]
+[ext_resource type="Texture2D" uid="uid://rrmnwp6vd2a8" path="res://img/decostas.png" id="3_3gg6e"]
+
+[node name="Cena0" instance=ExtResource("1_b34s8")]
+script = ExtResource("2_6qr2k")
+
+[node name="Fundo" parent="." index="0"]
+color = Color(0.376471, 0.337255, 0.411765, 0.403922)
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_x4xrb")
+
+[node name="Decostas" type="Sprite2D" parent="." index="2"]
+position = Vector2(723, 353)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("3_3gg6e")
+
+[node name="ColorRect" parent="." index="3"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center] A roda joga uma onda para cima de Zé, que apenas segue até ponto para subir."

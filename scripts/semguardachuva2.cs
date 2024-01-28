@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class semguardachuva : ColorRect
+public partial class semguardachuva2 : ColorRect
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -12,7 +12,7 @@ public partial class semguardachuva : ColorRect
 	public override void _Process(double delta)
 	{
 		if(Input.IsActionJustPressed("ui_accept")){
-			GetTree().ChangeSceneToFile("res://cenas/semguardachuva2.tscn");			
+			GetTree().ChangeSceneToFile("res://cenas/onibus.tscn");			
 		}
 	}
 }

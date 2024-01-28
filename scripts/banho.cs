@@ -26,7 +26,7 @@ public partial class banho : ColorRect
 	}
 
 	private void _on_button_2_pressed(){
-		GetTree().ChangeSceneToFile("res://cenas/tomoubanho.tscn");
+		GetTree().ChangeSceneToFile("res://cenas/tomoubanho2.tscn");
 	}
 	private void _on_button_3_pressed(){		
 		desc.Text = "[center] Zé resolveu que preferia ir fedido e sujo";

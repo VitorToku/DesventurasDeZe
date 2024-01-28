@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bms8s4x7xwpxg"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_uab08"]
+[ext_resource type="Script" path="res://scripts/gandaia.cs" id="2_j08lv"]
+[ext_resource type="Texture2D" uid="uid://c2xj72ivmn86r" path="res://img/belo-bumbum.png" id="3_j3s6u"]
+
+[node name="Cena0" instance=ExtResource("1_uab08")]
+script = ExtResource("2_j08lv")
+
+[node name="Fundo" parent="." index="0"]
+color = Color(0.376471, 0.337255, 0.411765, 0.403922)
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("3_j3s6u")
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center] Após uma noite de pura gandaia, Zé chegou em casa sem saber seu nome e nem como conseguiu esta tatuagem"

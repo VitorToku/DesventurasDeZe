@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cxwtoqn1mf2ky"]
 
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_egj84"]
-[ext_resource type="Texture2D" uid="uid://d2uto20on6vuf" path="res://img/recepcaoEdit.png" id="2_nhgqr"]
-[ext_resource type="Texture2D" uid="uid://cltknianbfk12" path="res://img/Caroline.png" id="3_2fcjj"]
-[ext_resource type="Texture2D" uid="uid://djsb3t2oxa26w" path="res://img/delado.png" id="4_p2s4u"]
+[ext_resource type="Texture2D" uid="uid://cxb2io1cexxvu" path="res://img/recepcaoEdit.png" id="2_nhgqr"]
+[ext_resource type="Texture2D" uid="uid://icba1mvylnsf" path="res://img/Caroline.png" id="3_2fcjj"]
+[ext_resource type="Texture2D" uid="uid://fefty0p0vrq" path="res://img/delado.png" id="4_p2s4u"]
 
 [node name="Cena0" instance=ExtResource("1_egj84")]
 
@@ -19,7 +19,7 @@ scale = Vector2(0.29, 0.29)
 texture = ExtResource("3_2fcjj")
 
 [node name="Delado" type="Sprite2D" parent="." index="3"]
-position = Vector2(256, 363)
+position = Vector2(265, 408)
 scale = Vector2(0.515, 0.515)
 texture = ExtResource("4_p2s4u")
 

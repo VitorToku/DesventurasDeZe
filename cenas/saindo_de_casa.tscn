@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_f2akh"]
 [ext_resource type="Script" path="res://scripts/saindo_de_casa.cs" id="2_ghhj6"]
 [ext_resource type="Texture2D" uid="uid://7guul3u62b5g" path="res://img/saindo-de-casaedit.jpg" id="2_ilde2"]
-[ext_resource type="Texture2D" uid="uid://cux2incw04yul" path="res://img/decostas.png" id="4_817ro"]
+[ext_resource type="Texture2D" uid="uid://rrmnwp6vd2a8" path="res://img/decostas.png" id="4_817ro"]
 
 [node name="Cena0" instance=ExtResource("1_f2akh")]
 script = ExtResource("2_ghhj6")

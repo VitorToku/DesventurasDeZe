@@ -6,6 +6,9 @@
 [node name="Cena0" instance=ExtResource("1_amcjm")]
 script = ExtResource("2_23xna")
 
+[node name="Fundo" parent="." index="0"]
+color = Color(0.376471, 0.337255, 0.411765, 0.403922)
+
 [node name="ColorRect" parent="." index="2"]
 offset_left = 1.0
 offset_top = 452.0
@@ -16,7 +19,7 @@ offset_left = 72.0
 offset_right = 1077.0
 offset_bottom = 53.0
 bbcode_enabled = true
-text = "[center]Depois de finalmente entrar no ônibus, enxarcado de água Zé avista um único lugar vazio no ônibus. Ele já está molhado e fedido e descansar seria muito bom, mas é um assento preferencial"
+text = "[center]Depois de finalmente entrar no ônibus, encharcado de água, Zé avista um único lugar vazio. Ele já está molhado e fedido e descansar seria muito bom, mas é um assento preferencial"
 
 [node name="Button2" type="Button" parent="ColorRect" index="1"]
 layout_mode = 0

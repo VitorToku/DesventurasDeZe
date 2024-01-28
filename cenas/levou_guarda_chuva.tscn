@@ -1,15 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://6774mkpnc3cw"]
+[gd_scene load_steps=5 format=3 uid="uid://6774mkpnc3cw"]
 
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_tf0ej"]
 [ext_resource type="Script" path="res://scripts/levou_guarda_chuva.cs" id="2_r858c"]
+[ext_resource type="Texture2D" uid="uid://b51u8bkfnjac6" path="res://img/ChuvosoEdit.png" id="3_rtvan"]
+[ext_resource type="Texture2D" uid="uid://b120v5ves7cg4" path="res://img/comguardachuva.png" id="4_kutmr"]
 
 [node name="Cena0" instance=ExtResource("1_tf0ej")]
 script = ExtResource("2_r858c")
 
-[node name="Sprite2D" parent="." index="1"]
-position = Vector2(601, 392)
+[node name="Fundo" parent="." index="0"]
+color = Color(0.376471, 0.337255, 0.411765, 0.403922)
 
-[node name="ColorRect" parent="." index="2"]
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(587.5, 322.1)
+scale = Vector2(1.28571, 0.804037)
+texture = ExtResource("3_rtvan")
+
+[node name="Comguardachuva" type="Sprite2D" parent="." index="2"]
+position = Vector2(475, 438)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("4_kutmr")
+
+[node name="ColorRect" parent="." index="3"]
 offset_left = 1.0
 offset_top = 452.0
 offset_bottom = 649.0
@@ -20,4 +32,4 @@ offset_right = 1077.0
 offset_bottom = 112.0
 bbcode_enabled = true
 text = "[center]No caminho até o ponto de ônibus, uma chuva muito forte começa a cair, Zé se sente aliviado por ter escolhido trazer o guarda-chuva. 
-Decidiu acelerar o passo para chegar até o ponto de ônibus mais rápido, quando menos espera... Um ônibus passa bem em cima de uma poça d’agua enorme."
+"

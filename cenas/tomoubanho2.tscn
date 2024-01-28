@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://dadvkqmaj0jrt"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_u4pfq"]
+[ext_resource type="Texture2D" uid="uid://d036kdbjd2rmx" path="res://img/chuveiroEdit.png" id="2_1tvf3"]
+[ext_resource type="Script" path="res://scripts/tomoubanho2.cs" id="2_lql22"]
+[ext_resource type="Texture2D" uid="uid://5l8khowe2w4" path="res://img/bundifora.png" id="3_p3njw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eoyfo"]
+size = Vector2(46, 41)
+
+[node name="Cena0" instance=ExtResource("1_u4pfq")]
+mouse_filter = 1
+script = ExtResource("2_lql22")
+
+[node name="Fundo" parent="." index="0"]
+mouse_filter = 1
+color = Color(0.376471, 0.337255, 0.411765, 0.403922)
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_1tvf3")
+
+[node name="Bundifora" type="Sprite2D" parent="." index="2"]
+position = Vector2(709, 398)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("3_p3njw")
+
+[node name="ColorRect" parent="." index="3"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+mouse_filter = 1
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center] Zé entrou no banho tremendo."
+
+[node name="Button" type="Area2D" parent="." index="4"]
+position = Vector2(1, 452)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Button" index="0"]
+position = Vector2(765, 110)
+shape = SubResource("RectangleShape2D_eoyfo")
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]

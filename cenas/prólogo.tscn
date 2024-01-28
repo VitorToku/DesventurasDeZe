@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_70xlt"]
 [ext_resource type="Script" path="res://scripts/prólogo.cs" id="2_6qygv"]
-[ext_resource type="Texture2D" uid="uid://bryk47bs8q8qa" path="res://img/zeruela.png" id="3_tcbt8"]
+[ext_resource type="Texture2D" uid="uid://bhri7u3htmc5h" path="res://img/zeruela.png" id="3_tcbt8"]
 
 [node name="Cena0" instance=ExtResource("1_70xlt")]
 script = ExtResource("2_6qygv")

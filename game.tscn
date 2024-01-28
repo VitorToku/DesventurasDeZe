@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://djs774huhmmfw"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_urruv"]
+[ext_resource type="PackedScene" uid="uid://by2p7t4sdpo7g" path="res://cenas/opcoes/Cena.tscn" id="2_qurpg"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ColorRect" parent="." instance=ExtResource("1_urruv")]
+offset_left = -2.0
+offset_top = 9.0
+offset_right = 1150.0
+offset_bottom = 657.0
+
+[node name="Node2D" parent="." instance=ExtResource("2_qurpg")]
+position = Vector2(-4, 13)

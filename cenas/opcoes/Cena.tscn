@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://by2p7t4sdpo7g"]
+
+[ext_resource type="Texture2D" uid="uid://c40yxp61aqpim" path="res://2 - Mr. Mochi/Running (32 x 32).png" id="1_lsb8d"]
+[ext_resource type="Script" path="res://Opcao1.cs" id="1_re245"]
+[ext_resource type="Script" path="res://Opcao2.cs" id="2_nthsj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Tela" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+scale = Vector2(2, 2)
+color = Color(0.968627, 0.85098, 0.776471, 1)
+
+[node name="Fundo" type="ColorRect" parent="Tela"]
+offset_left = 55.5
+offset_top = 31.5
+offset_right = 1207.5
+offset_bottom = 679.5
+scale = Vector2(0.9, 0.9)
+
+[node name="Cena" type="Sprite2D" parent="Tela"]
+position = Vector2(574.14, 323.39)
+scale = Vector2(32.3975, 18.2256)
+texture = ExtResource("1_lsb8d")
+hframes = 4
+
+[node name="CaixaDeOpcoes" type="ColorRect" parent="Tela"]
+layout_mode = 0
+offset_top = 451.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.247059, 0.247059, 0.247059, 0.431373)
+
+[node name="Descricao" type="RichTextLabel" parent="Tela/CaixaDeOpcoes"]
+layout_mode = 0
+offset_right = 1121.0
+offset_bottom = 40.0
+bbcode_enabled = true
+text = "[center]Sua mãe avisou sobre a chuva, mas Zé estava atrasado, o que ele deveria fazer?[/center]"
+
+[node name="Opcao2" type="Button" parent="Tela/CaixaDeOpcoes"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 48.0
+offset_right = 1092.0
+offset_bottom = 147.0
+text = "Atrasar um pouco mais e pegar o guarda-chuva"
+script = ExtResource("2_nthsj")
+
+[node name="Opcao1" type="Button" parent="Tela/CaixaDeOpcoes"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 47.0
+offset_right = 558.0
+offset_bottom = 146.0
+text = "Sair correndo pra pegar o busáo e ignorar sua mãe"
+script = ExtResource("1_re245")
+
+[connection signal="pressed" from="Tela/CaixaDeOpcoes/Opcao2" to="Tela/CaixaDeOpcoes/Opcao2" method="_on_pressed"]
+[connection signal="pressed" from="Tela/CaixaDeOpcoes/Opcao1" to="Tela/CaixaDeOpcoes/Opcao1" method="_on_pressed"]

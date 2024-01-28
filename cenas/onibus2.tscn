@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://k2gdsf1dnhnn"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_qiryy"]
+[ext_resource type="Texture2D" uid="uid://dqhnl73pfk6qh" path="res://img/onibusInterno.png" id="2_watyu"]
+[ext_resource type="Texture2D" uid="uid://fefty0p0vrq" path="res://img/delado.png" id="3_us7i4"]
+
+[node name="Cena0" instance=ExtResource("1_qiryy")]
+
+[node name="Fundo" parent="." index="0"]
+color = Color(0.376471, 0.337255, 0.411765, 0.403922)
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(600, 327)
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("2_watyu")
+
+[node name="Delado" type="Sprite2D" parent="." index="2"]
+position = Vector2(645, 421)
+scale = Vector2(0.38, 0.38)
+texture = ExtResource("3_us7i4")
+
+[node name="ColorRect" parent="." index="3"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0

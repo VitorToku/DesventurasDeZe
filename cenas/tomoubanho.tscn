@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://lt4gu1avnq52"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_2te3u"]
+[ext_resource type="Script" path="res://scripts/tomoubanho.cs" id="2_r5dg4"]
+
+[node name="Cena0" instance=ExtResource("1_2te3u")]
+script = ExtResource("2_r5dg4")
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center]A água acabou logo após o ele se ensaboar, Zé terá que secar o shampoo na toalha."

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://6774mkpnc3cw"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_tf0ej"]
+
+[node name="Cena0" instance=ExtResource("1_tf0ej")]
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+offset_bottom = 55.0
+bbcode_enabled = true
+text = "[center]No caminho até o ponto de ônibus, uma chuva muito forte começa a cair, Zé se sente aliviado por ter escolhido trazer o guarda-chuva. "

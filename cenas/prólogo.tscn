@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d05e8afrn4kta"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_70xlt"]
+[ext_resource type="Script" path="res://scripts/prólogo.cs" id="2_6qygv"]
+
+[node name="Cena0" instance=ExtResource("1_70xlt")]
+script = ExtResource("2_6qygv")
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+offset_bottom = 83.0
+bbcode_enabled = true
+text = "[center]Mais um dia comum na vida de José Da Silva Oliveira Pinto, para os íntimos o famoso Zé, um estudante brasileiro como qualquer outro. Iremos acompanhar a sua rotina emocionante na qual você pode escolher como ele irá tomar suas decisões!"

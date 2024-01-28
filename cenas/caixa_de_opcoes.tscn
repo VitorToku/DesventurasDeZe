@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://k25n1ur1tv44"]
+
+[node name="CaixaDeOpcoes" type="ColorRect"]
+offset_top = 451.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.247059, 0.247059, 0.247059, 0.431373)
+
+[node name="Descricao" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 1121.0
+offset_bottom = 40.0
+bbcode_enabled = true
+text = "[center]Sua mãe avisou sobre a chuva, mas Zé estava atrasado, o que ele deveria fazer?[/center]"
+
+[node name="Opcao2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 48.0
+offset_right = 1092.0
+offset_bottom = 147.0
+text = "Atrasar um pouco mais e pegar o guarda-chuva"
+
+[node name="Opcao1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 47.0
+offset_right = 558.0
+offset_bottom = 146.0
+text = "Sair correndo pra pegar o busáo e ignorar sua mãe"
+
+[connection signal="pressed" from="Opcao2" to="Opcao2" method="_on_pressed"]
+[connection signal="pressed" from="Opcao1" to="Opcao1" method="_on_pressed"]

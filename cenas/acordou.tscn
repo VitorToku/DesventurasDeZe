@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvx61pevkvpy1"]
+
+[ext_resource type="PackedScene" uid="uid://b7shogvjup6po" path="res://cenas/desfechos/Desfecho.tscn" id="1_le6wx"]
+[ext_resource type="Script" path="res://scripts/acordou.cs" id="2_ac2jc"]
+
+[node name="Cena0" instance=ExtResource("1_le6wx")]
+script = ExtResource("2_ac2jc")
+
+[node name="ColorRect" parent="." index="2"]
+offset_left = 1.0
+offset_top = 452.0
+offset_bottom = 649.0
+
+[node name="RichTextLabel" parent="ColorRect" index="0"]
+offset_left = 72.0
+offset_right = 1077.0
+bbcode_enabled = true
+text = "[center]Zé se levanta com muita preguiça e vai para o banheiro"

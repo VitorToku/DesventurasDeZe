@@ -1,22 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7shogvjup6po"]
-
-[ext_resource type="Texture2D" uid="uid://c40yxp61aqpim" path="res://2 - Mr. Mochi/Running (32 x 32).png" id="1_a0k3o"]
+[gd_scene format=3 uid="uid://b7shogvjup6po"]
 
 [node name="ColorRect" type="ColorRect"]
 offset_right = 1152.0
 offset_bottom = 648.0
-scale = Vector2(2, 2)
 color = Color(0.968627, 0.85098, 0.776471, 1)
 
 [node name="Fundo" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = 55.5
 offset_top = 31.5
 offset_right = 1207.5
 offset_bottom = 679.5
 scale = Vector2(0.9, 0.9)
+color = Color(0.376471, 0.337255, 0.411765, 1)
 
-[node name="Cena" type="Sprite2D" parent="Fundo"]
-position = Vector2(576.944, 324.445)
-scale = Vector2(35.9896, 20.2431)
-texture = ExtResource("1_a0k3o")
-hframes = 4
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(574, 324)
+scale = Vector2(0.9, 0.9)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 451.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.247059, 0.247059, 0.247059, 0.431373)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 40.0

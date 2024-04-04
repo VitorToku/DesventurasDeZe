@@ -1,9 +1,11 @@
 # Desventuras De Zé
-
 Projeto desenvolvido na Global Game Jam 2024. 
 
 ## Descrição
-O jogo conta a história no dia de Zé, uma pessoa um pouco azarada. Trata-se de um jogo simples de escolhas que vão levando o personagem em situações diferentes.
+O jogo conta a história no dia de Zé, uma pessoa um pouco azarada. Trata-se de um jogo simples de escolhas que vão levando o personagem em situações diferentes. <br>
+A plataforma utilizada foi o Godot, e a linguagem C#.<br>
+Todas as imagens usadas foram desenhadas a mão pelos integrantes
+<img src="https://github.com/VitorToku/DesventurasDeZe/blob/main/img/zeruela.png" alt="Zé" />
 
 ## Integrantes: <a href= "https://www.linkedin.com/in/lorena-bernardo-0118161b1/">Lorena Bernardo</a>, <a href="https://www.linkedin.com/in/isabella-santos-984b18187/">Isabella Santos</a>, <a href="https://www.linkedin.com/in/flavio-santos-289477209/">Flávio Santos</a>,<a href="https://www.linkedin.com/in/lucas-battista-4316221aa/">Lucas Battista</a>, <a href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/">Vitor Hideki Tokunaga</a>
 
